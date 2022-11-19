@@ -1,5 +1,5 @@
 /*   RESET   */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height:1;} article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {display:block;} nav ul, nav ol {list-style:none;} blockquote, q {quotes:none;} blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;} a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent;} ins {background-color:#ff9; color:#000; text-decoration:none;} mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;} del {text-decoration: line-through;} abbr[title], dfn[title] {border-bottom:1px dotted; cursor:help;} table {border-collapse:collapse; border-spacing:0;} hr {display:block; height:1px; border:0; margin:1em 0; padding:0;} input, select {vertical-align:middle;}
+/*html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height:1;} article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {display:block;} nav ul, nav ol {list-style:none;} blockquote, q {quotes:none;} blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;} a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent;} ins {background-color:#ff9; color:#000; text-decoration:none;} mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;} del {text-decoration: line-through;} abbr[title], dfn[title] {border-bottom:1px dotted; cursor:help;} table {border-collapse:collapse; border-spacing:0;} hr {display:block; height:1px; border:0; margin:1em 0; padding:0;} input, select {vertical-align:middle;}*/
 
 
 /*   MAIN STYLES   */
@@ -14,6 +14,11 @@ section h2 {border-left: 2px solid #DDD; margin-bottom: 10px; padding-left: 5px;
 section h3 {border-left: 2px solid #DDD; margin-bottom: 10px; padding-left: 5px;}
 section p {line-height: 1.5em; padding: 0 20px 5px;}
 
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 
 #myImg {
   border-radius: 5px;
@@ -93,4 +98,61 @@ section p {line-height: 1.5em; padding: 0 20px 5px;}
   .modal-content {
     width: 100%;
   }
+}
+.button {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+	/*position: sticky;*/
+	/*bottom: 0;*/
+	/*top: 0;*/
+	bottom: 0;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #111;
+}
+li:last-child {
+	border-right: none;
+}
+.active {
+	background-color: #04AA6D;
+}
+
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  text-align: center;
 }
