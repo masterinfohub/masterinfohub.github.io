@@ -54,29 +54,7 @@
     <br>
     <a href="schedule.html"><button id="check" class="block"><br>Schedule<br><br></button></a>
     <br><br><br>
-    <button id="pat" class="block">Pat Harold</button>
-    <script>
-      const sendMessageButton = document.getElementById("pat");
-      sendMessageButton.addEventListener("click", () => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://discord.com/api/webhooks/1077831699318177912/bkk2FM-T2hvjsdNeyd4y-SwDx3d0i6q0gjHkHEvs1BKeFyqWbyZWfrrQgLlzMlenP0Pp");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(JSON.stringify({
-          content: "Pat Pat"
-        }));
-      });
-    </script>
-    <script>
-      const sendMessageButton_check = document.getElementById("check");
-      sendMessageButton_check.addEventListener("click", () => {
-        const xhr_check = new XMLHttpRequest();
-        xhr_check.open("POST", "https://discord.com/api/webhooks/1077837990795165716/YjFsGSEAbqUd7IDc3i5vFAYwJuPj5fdi6K8aVeXLtbzoOMIUd84QczDaUrHDQtyUjA83");
-        xhr_check.setRequestHeader("Content-Type", "application/json");
-        xhr_check.send(JSON.stringify({
-          content: "Checking"
-        }));
-      });
-    </script>
+    <button class="block">Pat Harold</button>
 
 </body>
 </html>
