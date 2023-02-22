@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-    <script src="scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -56,6 +55,17 @@
     <a href="schedule.html"><button class="block"><br>Schedule<br><br></button></a>
     <br><br><br>
     <button id="pat" class="block">Pat Harold</button>
+    <script>
+      const sendMessageButton = document.getElementById("pat");
+      sendMessageButton.addEventListener("click", () => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://discord.com/api/webhooks/1077831699318177912/bkk2FM-T2hvjsdNeyd4y-SwDx3d0i6q0gjHkHEvs1BKeFyqWbyZWfrrQgLlzMlenP0Pp");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify({
+          content: "Pat Pat"
+        }));
+      });
+    </script>
 
 </body>
 </html>
