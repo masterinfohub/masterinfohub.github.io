@@ -40,7 +40,18 @@
 <!--################################################################-->
 <!--################################################################-->
 <!--<b>Summary</b><br>-->
-
+    <button id="update_schedule" class="button button3"><font>Update Schedule!</font> </button>
+    <script>
+      const sendMessageButton = document.getElementById("update_schedule");
+      sendMessageButton.addEventListener("click", () => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://discord.com/api/webhooks/1077831699318177912/bkk2FM-T2hvjsdNeyd4y-SwDx3d0i6q0gjHkHEvs1BKeFyqWbyZWfrrQgLlzMlenP0Pp");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify({
+          content: "Update Schedule Now!"
+        }));
+      });
+    </script>
 <table>
     <tr>
         <th>Time</th>
@@ -77,7 +88,7 @@
 <!--################################################################-->
 <!--################################################################-->
 <!--################################################################-->
-<small>Slave Harold's own work. <font color="red">Master Conman's tasks.</font><font color="green">Unavailable.</font></small>
+<small>Slave Harold's own work. <font color="red">Master Conman's tasks.</font> <font color="green">Unavailable.</font></small>
 </section>
 
 </body>
